@@ -20,12 +20,9 @@
 
 ---
 
-## 👨‍🎓 Autor
+## Aluno
 
-* **Estudante:** [Seu Nome Completo Aqui]
-* **Matrícula:** [Sua Matrícula/ID Aqui]
-* **Curso:** [Nome do Seu Curso]
-* **Instituição:** [Nome da Sua Faculdade/Universidade]
+* **Estudante:** Leonardo João Ramos Gomes
 
 ---
 
