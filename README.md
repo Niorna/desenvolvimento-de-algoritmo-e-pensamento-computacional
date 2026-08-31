@@ -1,6 +1,6 @@
 # Calculadora Multifuncional em Flowgorithm
 
-**Aluno:** LUIZFILIPEDEMELODIAS
+**Aluno:** Leonardo João Ramos Gomes
 
 
 
