@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main()
-{
+int main () {
     int continuar = 1;
     int opcao;
 
@@ -39,7 +38,7 @@ int main()
                     printf("Você está com obesidade I\n");
                 }
                 break;
-            }
+    }
 
             case 2: { // Área de figuras
                 int forma;
@@ -288,6 +287,6 @@ int main()
         }
     }
 
-    printf("Calculadora encerrada. Obrigado por utilizar!\n");
+    printf("Calculadora encerrada.\n");
     return 0;
 }
