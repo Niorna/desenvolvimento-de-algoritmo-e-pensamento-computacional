@@ -255,6 +255,6 @@ Calculadora encerrada. Obrigado por utilizar!
 
 ## Identificação do estudante
 
-- **Nome:** Davi
+- **Nome:** Leonardo
 - **Instituição:** UDF
 - **Disciplina/Projeto:** Programação em C — Calculadora de 20 operações
