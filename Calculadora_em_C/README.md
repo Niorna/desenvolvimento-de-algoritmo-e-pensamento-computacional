@@ -1,93 +1,68 @@
-<div align="center">
+# Calculadora Multifuncional em C
 
-# 🧮 Calculadora Multifuncional em C
-
-![C](https://img.shields.io/badge/Linguagem-C-blue?style=for-the-badge&logo=c)
-![GCC](https://img.shields.io/badge/Compilador-GCC-informational?style=for-the-badge&logo=gnu)
-![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge)
-
-<p align="center">
-  Uma aplicação interativa via linha de comando (CLI) que reúne 20 operações matemáticas, financeiras, físicas e utilitárias desenvolvida em linguagem C.
-</p>
-
-[Recursos](#-funcionalidades-implementadas) • 
-[Operações](#-relação-das-20-funções) • 
-[Conceitos C](#-conceitos-de-programação-aplicados) • 
-[Compilação](#-como-compilar-e-executar) • 
-[Autor](#-autor)
-
-</div>
+**Aluno:** Leonardo João Ramos Gomes
 
 ---
 
-## Aluno
+## 🎯 Objetivo do Programa
 
-* **Estudante:** Leonardo João Ramos Gomes
-
----
-
-## 📌 Descrição do Projeto
-
-O **Calculadora Multifuncional em C** é um projeto acadêmico desenvolvido para proporcionar uma interface acessível e contínua via linha de comando. O programa utiliza uma estrutura baseada em menu para permitir ao usuário executar múltiplos cálculos dinâmicos sem a necessidade de reiniciar a aplicação a cada operação.
-
-### 🎯 Objetivo
-Centralizar rotinas essenciais de cálculo em uma única ferramenta e demonstrar a aplicação prática de conceitos fundamentais da programação estruturada em C, como controle de fluxo, manipuladores de E/S e funções matemáticas.
+O programa tem como objetivo oferecer uma ferramenta versátil e interativa via terminal para a realização de diversos cálculos utilitários[cite: 1, 2]. Desenvolvido em linguagem C, o algoritmo atende demandas de operações matemáticas básicas, geometria, conversões de unidades, finanças, física e métricas de saúde[cite: 1, 2].
 
 ---
 
-## ✨ Funcionalidades Implementadas
+## ⚙️ Descrição Resumida do Funcionamento
 
-- [x] **Navegação Contínua:** Menu interativo baseado em laço de repetição.
-- [x] **Tratamento de Exceções:** Validação contra divisão por zero.
-- [x] **Diagnóstico de Saúde:** Classificação automática do resultado de IMC.
-- [x] **Geometria Dinâmica:** Cálculo de área para diferentes figuras (Quadrado/Retângulo, Círculo e Triângulo).
-- [x] **Formatador Decimal:** Exibição padronizada de resultados com precisão de duas casas decimais (`%.2lf`).
+O algoritmo funciona em laço de repetição (`while`), exibindo continuamente um menu interativo no terminal até que a opção de encerramento (`0`) seja selecionada[cite: 1]. 
 
----
-
-## 📋 Relação das 20 Funções
-
-| Opção | Operação | Descrição / Fórmula |
-| :---: | :--- | :--- |
-| `0` | **Encerrar** | Finaliza a execução do programa. |
-| `1` | **IMC** | Compara peso e altura e exibe a faixa de saúde ($\frac{peso}{altura^2}$). |
-| `2` | **Área de Figuras** | Calcula área de Quadrado/Retângulo ($l \cdot h$), Círculo ($\pi \cdot r^2$) e Triângulo ($\frac{b \cdot h}{2}$). |
-| `3` | **Soma** | Realiza a adição entre dois números reais ($n_1 + n_2$). |
-| `4` | **Subtração** | Calcula a diferença entre dois números reais ($n_1 - n_2$). |
-| `5` | **Multiplicação** | Retorna o produto entre dois números reais ($n_1 \cdot n_2$). |
-| `6` | **Divisão** | Razão ($n_1 / n_2$) com verificação preventiva de divisor zero. |
-| `7` | **Média Aritmética** | Média simples entre dois valores ($\frac{n_1 + n_2}{2}$). |
-| `8` | **Porcentagem** | Calcula a fração percentual de um valor ($\frac{valor \cdot \%}{100}$). |
-| `9` | **Regra de Três** | Resolve a proporção direta de três valores ($X = \frac{B \cdot C}{A}$). |
-| `10` | **Celsius para Fahrenheit** | Converte graus Celsius para Fahrenheit ($F = C \cdot \frac{9}{5} + 32$). |
-| `11` | **Fahrenheit para Celsius** | Converte Fahrenheit para graus Celsius ($C = (F - 32) \cdot \frac{5}{9}$). |
-| `12` | **Perímetro do Retângulo** | Determina o contorno do retângulo ($2 \cdot (largura + altura)$). |
-| `13` | **Volume do Cubo** | Volume tridimensional a partir do lado ($lado^3$). |
-| `14` | **Juros Simples** | Calcula o rendimento de juros ($J = C \cdot i \cdot t$). |
-| `15` | **Desconto** | Aplica abatimento percentual sobre valor inicial. |
-| `16` | **Velocidade Média** | Razão entre distância e tempo ($\frac{\Delta s}{\Delta t}$). |
-| `17` | **Consumo de Combustível** | Eficiência em $km/l$ ($\frac{distância}{litros}$). |
-| `18` | **Par ou Ímpar** | Determina paridade inteira utilizando operador de resto (`%`). |
-| `19` | **Maior Número** | Compara dois números e retorna o maior valor ou igualdade. |
-| `20` | **Potência** | Eleva uma base a determinado expoente ($base^{expoente}$). |
+- **Menu Principal:** Apresenta 20 opções de cálculos e a opção para finalizar o programa[cite: 1].
+- **Entrada de Dados:** Conforme a opção digitada, o programa utiliza `scanf` para coletar os valores de entrada necessários[cite: 1].
+- **Processamento:** Executa o cálculo com base nos operadores nativos de C e funções da biblioteca `<math.h>`[cite: 1].
+- **Exibição do Resultado:** Mostra o resultado formatado em tela e retorna ao menu inicial[cite: 1].
 
 ---
 
-## 🛠️ Bibliotecas Utilizadas
+## 📌 Funções Disponíveis
 
-* `<stdio.h>` (**Standard Input/Output**): Manipulação de entrada (`scanf`) e saída (`printf`) de dados.
-* `<math.h>` (**C Math Library**): Suporte a operações matemáticas como a função `pow()`.
+### 1. Cálculo de IMC (Opção 1)
+Solicita o peso ($kg$) e a altura ($cm$)[cite: 1]. O cálculo utiliza a fórmula:
+
+$$\text{IMC} = \frac{\text{peso}}{\left(\frac{\text{altura}}{100}\right)^2}$$
+
+O resultado é classificado de acordo com os critérios abaixo[cite: 1]:
+- **Abaixo ou igual a 18.5:** Tu estás desnutrido[cite: 1]
+- **18.6 a 24.9:** Seu peso está normal[cite: 1]
+- **25.0 a 29.9:** Você está com sobrepeso[cite: 1]
+- **30.0 a 34.9:** Você está com obesidade I[cite: 1]
 
 ---
 
-## 🧠 Conceitos de Programação Aplicados
+### 2. Cálculo de Área de Figuras (Opção 2)
+Possibilita o cálculo da área de três formas geométricas[cite: 1]:
+1. **Quadrado ou Retângulo:** $A = \text{largura} \cdot \text{altura}$[cite: 1]
+2. **Círculo:** $A = 3.14 \cdot r^2$[cite: 1]
+3. **Triângulo:** $A = \frac{b \cdot h}{2}$[cite: 1]
 
-```mermaid
-flowchart TD
-    A[Início - main] --> B[Entrada no Loop - while]
-    B --> C[Exibição do Menu & Entrada via scanf]
-    C --> D{Seleção via switch-case}
-    D -->|Opção 1 a 20| E[Condicionais - if/else]
-    E --> F[Cálculos e Biblioteca math.h]
-    F --> B
-    D -->|Opção 0| G[Encerramento - break]
+---
+
+## 🔢 Relação das 20 Funções Implementadas
+
+1. **IMC:** Cálculo do Índice de Massa Corporal e classificação[cite: 1].
+2. **Área de Figuras:** Cálculo de área de quadrado/retângulo, círculo e triângulo[cite: 1].
+3. **Soma:** $n_1 + n_2$[cite: 1]
+4. **Subtração:** $n_1 - n_2$[cite: 1]
+5. **Multiplicação:** $n_1 \cdot n_2$[cite: 1]
+6. **Divisão:** $n_1 / n_2$ (com verificação para evitar divisão por zero)[cite: 1].
+7. **Média Aritmética:** $\frac{n_1 + n_2}{2}$[cite: 1]
+8. **Porcentagem:** $\frac{\text{valor} \cdot \text{porcentagem}}{100}$[cite: 1]
+9. **Regra de Três:** $X = \frac{B \cdot C}{A}$[cite: 1]
+10. **Celsius para Fahrenheit:** $F = (C \cdot \frac{9}{5}) + 32$[cite: 1]
+11. **Fahrenheit para Celsius:** $C = (F - 32) \cdot \frac{5}{9}$[cite: 1]
+12. **Perímetro do Retângulo:** $P = 2 \cdot (\text{largura} + \text{altura})$[cite: 1]
+13. **Volume do Cubo:** $V = \text{lado}^3$[cite: 1]
+14. **Juros Simples:** $J = \text{capital} \cdot (\frac{\text{taxa}}{100}) \cdot \text{tempo}$[cite: 1]
+15. **Desconto:** $V_{\text{final}} = \text{valor} - (\text{valor} \cdot \frac{\text{desconto}}{100})$[cite: 1]
+16. **Velocidade Média:** $V_m = \frac{\text{distância}}{\text{tempo}}$[cite: 1]
+17. **Consumo de Combustível:** $C = \frac{\text{distância}}{\text{litros}}$[cite: 1]
+18. **Par ou Ímpar:** Identificação da paridade do número inteiro inserido[cite: 1].
+19. **Maior Entre Dois Números:** Comparação de magnitude entre dois valores[cite: 1].
+20. **Potência:** Cálculo de base elevada ao expoente ($\text{base}^{\text{expoente}}$) via `pow()`[cite: 1].
