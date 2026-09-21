@@ -116,6 +116,17 @@ Limite definido: 35.00 C
 Confirma que o `do...while` de validação do limite rejeita valores
 negativos e zero, só avançando quando um valor positivo é informado.
 
-## Nível de dificuldade
+Questão final de reflexão
 
-Alta — desafio completo envolvendo lógica, validações e múltiplas condições.
+Por que você escolheu while, do...while ou uma combinação das duas estruturas? Em qual parte do algoritmo a diferença entre testar a condição antes ou depois da execução foi importante para sua solução?
+
+Optei por uma combinação das duas estruturas, porque elas resolvem problemas diferentes dentro do algoritmo.
+
+Usei do...while na validação do limite de temperatura porque, nesse trecho, eu preciso executar a leitura pelo menos uma vez antes de ter qualquer valor para avaliar — não existe um "limite anterior" que eu possa testar antes de pedir o primeiro número ao usuário. O do...while executa o bloco (pede o valor) e só depois verifica se ele é válido e positivo, repetindo o processo enquanto a condição falhar. Se eu tivesse usado um while aqui, precisaria inicializar limite artificialmente com algum valor "inválido" só para a primeira comparação passar, o que deixaria o código menos natural.
+
+Já no laço principal de leitura das temperaturas usei while, porque antes de cada nova leitura eu já tenho uma informação relevante para testar: a variável consecutivas (quantas leituras seguidas ficaram acima do limite). Faz sentido verificar essa condição antes de pedir mais uma temperatura, pois é exatamente essa checagem que decide se o monitoramento deve continuar ou parar. Usar do...while aqui poderia fazer o programa pedir uma leitura "a mais" mesmo depois que a condição de parada (3 consecutivas acima do limite) já tivesse sido satisfeita, o que não faz sentido para um sistema de segurança que deve encerrar imediatamente ao identificar o risco.
+
+Ou seja, a diferença entre testar a condição antes (while) ou depois (do...while) foi decisiva em dois pontos do algoritmo:
+
+Validação do limite — precisava garantir pelo menos uma execução (pedir o valor) antes de existir algo para validar, por isso do...while.
+Parada automática do monitoramento — precisava impedir qualquer leitura extra depois que a condição de risco (3 consecutivas) já tivesse sido atingida, por isso while, que verifica a condição antes de executar o corpo do laço.
