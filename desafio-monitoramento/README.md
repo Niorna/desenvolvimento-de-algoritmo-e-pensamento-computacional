@@ -116,7 +116,7 @@ Limite definido: 35.00 C
 Confirma que o `do...while` de validação do limite rejeita valores
 negativos e zero, só avançando quando um valor positivo é informado.
 
-Questão final de reflexão
+### Questão final de reflexão
 
 Por que você escolheu while, do...while ou uma combinação das duas estruturas? Em qual parte do algoritmo a diferença entre testar a condição antes ou depois da execução foi importante para sua solução?
 
