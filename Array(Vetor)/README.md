@@ -99,18 +99,3 @@ vetor[1] = 28
 ...
 vetor[19] = 15
 ```
-
-## 🖥️ Captura de tela da execução
-
-A imagem abaixo comprova a execução real do programa, com a entrada dos 20 números e a exibição de todos os resultados calculados:
-
-![Execução do programa no terminal](execucao.png)
-
-## 📁 Estrutura do repositório
-
-```
-.
-├── vetor_corrigido.c   # Código-fonte em C
-├── README.md           # Este arquivo
-└── execucao.png        # Captura de tela da execução do programa
-```
