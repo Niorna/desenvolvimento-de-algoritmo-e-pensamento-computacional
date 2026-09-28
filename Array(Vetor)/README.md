@@ -1,5 +1,7 @@
 # Manipulação de Vetor de 20 Números Inteiros em C
 
+##Criador do código: Leonardo João Ramos Gomes
+
 ## 📌 Objetivo
 
 Este projeto tem como objetivo aplicar, na prática, os conceitos de:
