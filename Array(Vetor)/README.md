@@ -1,6 +1,6 @@
 # Manipulação de Vetor de 20 Números Inteiros em C
 
-##Criador do código: Leonardo João Ramos Gomes
+## Criador do código: Leonardo João Ramos Gomes
 
 ## 📌 Objetivo
 
