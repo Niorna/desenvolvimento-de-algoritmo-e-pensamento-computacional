@@ -36,12 +36,6 @@ gcc main.c -o cadastro.exe
 ```
 
 ## Como executar
-Linux/macOS:
-
-```bash
-./cadastro
-```
-
 Windows:
 
 ```bash
