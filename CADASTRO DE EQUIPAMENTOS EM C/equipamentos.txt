@@ -1,0 +1,3 @@
+Nome: Computador Dell | Codigo: EQ001 | Localizacao: Laboratorio 1
+Nome: Projetor Epson | Codigo: EQ002 | Localizacao: Sala 3
+Nome: Teclado USB | Codigo: EQ003 | Localizacao: Laboratorio 2
