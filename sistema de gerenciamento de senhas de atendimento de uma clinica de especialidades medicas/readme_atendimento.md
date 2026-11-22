@@ -10,12 +10,9 @@ Sistema de gerenciamento de senhas de atendimento para clínicas, feito em **C**
 
 - [Funcionalidades](#-funcionalidades)
 - [Tipos de senha](#-tipos-de-senha)
-- [Como compilar e executar](#-como-compilar-e-executar)
 - [Como usar](#-como-usar)
 - [Exemplo de execução](#-exemplo-de-execução)
 - [Como o código funciona](#-como-o-código-funciona)
-- [Limitações](#-limitações)
-- [Melhorias futuras](#-melhorias-futuras)
 
 ## ✨ Funcionalidades
 
@@ -35,23 +32,6 @@ Sistema de gerenciamento de senhas de atendimento para clínicas, feito em **C**
 | **N** | Normal | Demais pacientes | 3ª |
 
 > Se o paciente se encaixar em mais de um critério (por exemplo, uma gestante com 85 anos), vale a senha de **maior prioridade** (U).
-
-## 🚀 Como compilar e executar
-
-É necessário ter um compilador C instalado, como o [GCC](https://gcc.gnu.org/).
-
-```bash
-# Compilar
-gcc main.c -o senhas
-
-# Executar (Linux / macOS)
-./senhas
-
-# Executar (Windows)
-senhas.exe
-```
-
-> 💡 No terminal do Windows, se os acentos aparecerem errados, execute `chcp 65001` antes do programa.
 
 ## 🕹️ Como usar
 
@@ -164,15 +144,3 @@ Como cada fila é atendida por ordem de chegada (FIFO), basta guardar quantas se
 - As entradas numéricas não são totalmente validadas: uma letra digitada no lugar de um número pode causar comportamento inesperado.
 - Valores diferentes de `1` nas perguntas de sim/não são tratados como "não"; no gênero, valores diferentes de `2` são tratados como masculino.
 - Senhas preferenciais e normais podem esperar muito caso cheguem pacientes urgentes continuamente.
-
-## 🔮 Melhorias futuras
-
-- [ ] Validação completa das entradas
-- [ ] Salvar o histórico de atendimentos em arquivo
-- [ ] Relatório de atendimentos do dia
-- [ ] Regra para evitar que senhas normais esperem demais
-- [ ] Reinício automático das filas a cada dia
-
-## 📄 Licença
-
-Projeto de uso livre para fins educacionais.
